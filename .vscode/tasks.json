@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+		{
+			"label": "main",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"`pkg-config", "--cflags", "--libs", "gl`",
+				"`pkg-config", "--cflags", "--libs", "glew`",
+                "`pkg-config", "--cflags", "--libs", "glut`",
+                "`pkg-config", "--cflags", "--libs", "glm`",
+				
+				"main.cpp",
+				"-o",
+				"main",
+				"--debug"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
+	]
+}
