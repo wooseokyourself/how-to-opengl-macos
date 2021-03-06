@@ -8,4 +8,4 @@ and install https://www.xquartz.org.
 
 ### 2. Construct .vscode like this repo.
 
-### 3. Click Terminal -> Run Build Task to build your project.
+### 3. Click Terminal --> Run Build Task to build your project.
