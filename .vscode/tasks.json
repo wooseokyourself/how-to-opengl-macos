@@ -10,8 +10,9 @@
 				"-stdlib=libc++",
 				"`pkg-config", "--cflags", "--libs", "gl`",
 				"`pkg-config", "--cflags", "--libs", "glew`",
-                "`pkg-config", "--cflags", "--libs", "glut`",
-                "`pkg-config", "--cflags", "--libs", "glm`",
+                		"`pkg-config", "--cflags", "--libs", "glut`",
+                		"`pkg-config", "--cflags", "--libs", "glm`",
+				"`pkg-config", "--cflags", "--libs", "glu`",
 				
 				"main.cpp",
 				"-o",
