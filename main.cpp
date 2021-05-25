@@ -29,7 +29,12 @@ int main(int argc, char** argv) {
         std::cout << probe[i] << std::endl;
     }
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA); 
+#ifdef __APPLE__
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA | GLUT_3_2_CORE_PROFILE);
+    glewExperimental = GL_TRUE;
+#else
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA);
+#endif
     glutInitWindowPosition(100, 100); 
     glutInitWindowSize(320, 320); 
     glutCreateWindow("Hello OpenGL"); 
