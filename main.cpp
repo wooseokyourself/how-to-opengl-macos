@@ -1,7 +1,9 @@
 #include <iostream>
 #include <GL/glew.h>
-#include <GL/freeglut.h>
-#include <glm/vec3.hpp>
+#ifdef __APPLE__
+#   include <OpenGL/gl3.h>
+#   include <GLUT/glut.h>
+#endif
 #include <vector>
 
 std::vector<glm::vec3> position = { 
