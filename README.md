@@ -1,14 +1,8 @@
-### 1. Install requirements.
-```console
-mac@mac~ $ brew install glew
-mac@mac~ $ brew install glut
-mac@mac~ $ brew install glm
-mac@mac~ $ brew install mesa-glu
-``` 
-after done each installation, export pkg-config path.
 
-and install https://www.xquartz.org.
+## How to use freeGlut, glew with OpenGL in your macOS with Visual Studio code.   
+
+### 1. Install https://www.xquartz.org for window system.   
 
 ### 2. Construct .vscode like this repo.
 
-### 3. Click Terminal --> Run Build Task to build your project.
+### 3. Click Terminal in vscode --> Run Build Task to build your project.
